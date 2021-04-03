@@ -21,9 +21,9 @@ import {
 	text,
 	transition_in,
 	transition_out
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
-import ToggleTheme from '/spa/global/../components/toggleTheme.js';
+import ToggleTheme from "../components/toggleTheme.svelte";
 
 function create_fragment(ctx) {
 	let nav;

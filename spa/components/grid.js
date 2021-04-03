@@ -16,9 +16,9 @@ import {
 	safe_not_equal,
 	set_data,
 	text
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
-import { sortByDate } from '/spa/components/../scripts/sort_by_date.js';
+import { sortByDate } from "../scripts/sort_by_date.svelte";
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();

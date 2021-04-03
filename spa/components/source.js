@@ -20,7 +20,7 @@ import {
 	space,
 	text,
 	toggle_class
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
 function create_fragment(ctx) {
 	let div0;

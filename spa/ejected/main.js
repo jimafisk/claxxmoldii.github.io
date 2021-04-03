@@ -1,4 +1,4 @@
-import Router from '/spa/ejected/./router.js';
+import Router from './router.svelte';
 import contentSource from './content.js';
 import * as allLayouts from './layouts.js';
 

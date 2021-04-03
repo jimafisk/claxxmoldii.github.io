@@ -25,15 +25,15 @@ import {
 	text,
 	transition_in,
 	transition_out
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
-import Uses from '/spa/content/../components/source.js';
+import Uses from "../components/source.svelte";
 
 // Svelte store example:
-import { count } from '/spa/content/../scripts/stores.js';
+import { count } from "../scripts/stores.svelte";
 
-import Incrementer from '/spa/content/../components/incrementer.js';
-import Decrementer from '/spa/content/../components/decrementer.js';
+import Incrementer from "../components/incrementer.svelte";
+import Decrementer from "../components/decrementer.svelte";
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();

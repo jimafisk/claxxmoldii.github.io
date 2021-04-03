@@ -23,13 +23,13 @@ import {
 	text,
 	transition_in,
 	transition_out
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
-import Uses from '/spa/content/../components/source.js';
-import Archive from '/spa/content/../components/archive.js';
-import CategoriesList from '/spa/content/../components/categoriesList.js';
-import Search from '/spa/content/../components/search.js';
-import TagsList from '/spa/content/../components/tagsList.js';
+import Uses from "../components/source.svelte";
+import Archive from "../components/archive.svelte";
+import CategoriesList from "../components/categoriesList.svelte";
+import Search from "../components/search.svelte";
+import TagsList from "../components/tagsList.svelte";
 
 function create_if_block_3(ctx) {
 	let archive;
@@ -360,16 +360,18 @@ function instance($$self, $$props, $$invalidate) {
 	let { page } = $$props,
 		{ title } = $$props,
 		{ description } = $$props,
-		{ content } = $$props;
+		{ content } = $$props,
+		{ allContent } = $$props;
 
 	$$self.$$set = $$props => {
 		if ("page" in $$props) $$invalidate(0, page = $$props.page);
 		if ("title" in $$props) $$invalidate(1, title = $$props.title);
 		if ("description" in $$props) $$invalidate(2, description = $$props.description);
 		if ("content" in $$props) $$invalidate(3, content = $$props.content);
+		if ("allContent" in $$props) $$invalidate(4, allContent = $$props.allContent);
 	};
 
-	return [page, title, description, content];
+	return [page, title, description, content, allContent];
 }
 
 class Component extends SvelteComponent {
@@ -380,7 +382,8 @@ class Component extends SvelteComponent {
 			page: 0,
 			title: 1,
 			description: 2,
-			content: 3
+			content: 3,
+			allContent: 4
 		});
 	}
 }

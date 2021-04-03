@@ -12,7 +12,7 @@ import {
 	noop,
 	safe_not_equal,
 	svg_element
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
 function create_fragment(ctx) {
 	let button;

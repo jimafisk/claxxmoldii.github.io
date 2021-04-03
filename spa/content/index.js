@@ -18,13 +18,13 @@ import {
 	space,
 	transition_in,
 	transition_out
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
-import Grid from '/spa/content/../components/grid.js';
-import Uses from '/spa/content/../components/source.js';
-import Pager from '/spa/content/../components/pager.js';
-import Opening from '/spa/content/../components/opening.js';
-import PostCardCollection from '/spa/content/../components/postCardCollection.js';
+import Grid from "../components/grid.svelte";
+import Uses from "../components/source.svelte";
+import Pager from "../components/pager.svelte";
+import Opening from "../components/opening.svelte";
+import PostCardCollection from "../components/postCardCollection.svelte";
 
 function create_fragment(ctx) {
 	let div1;

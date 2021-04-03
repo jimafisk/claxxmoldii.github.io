@@ -13,9 +13,9 @@ import {
 	noop,
 	safe_not_equal,
 	text
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
-import { count } from '/spa/components/../scripts/stores.js';
+import { count } from "../scripts/stores.svelte";
 
 function create_fragment(ctx) {
 	let button;

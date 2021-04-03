@@ -11,7 +11,7 @@ import {
 	insert,
 	noop,
 	safe_not_equal
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
 function create_fragment(ctx) {
 	let div1;

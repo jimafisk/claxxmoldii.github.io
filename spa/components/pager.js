@@ -18,7 +18,7 @@ import {
 	set_data,
 	space,
 	text
-} from '/spa/web_modules/svelte/internal/index.mjs';
+} from "svelte/internal";
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
