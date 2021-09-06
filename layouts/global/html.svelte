@@ -3,11 +3,11 @@
   import Footeroo from './footeroo.svelte';
   import { makeTitle } from '../scripts/make_title.svelte';
 
-  export let content, layout, allContent, allLayouts;
+  export let content, layout, allContent, allLayouts, env;
 </script>
 
 <html lang="en">
-<Head title={makeTitle(content.filename)} />
+<Head title={makeTitle(content.filename)} {env}/>
 
 <body class="isGrid">  
   <svelte:component this={layout} {...content.fields} {content} {allContent} {allLayouts} />
