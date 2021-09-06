@@ -3,7 +3,7 @@
     "behindthescenes": "/:filename",
     "pages": "/:filename"
   },
-  "baseurl": "/claxxmoldii.github.io",
+  "baseurl": "/claxxmoldii.github.io/",
   "build": "public",
   "local": {
     "port": 8080
