@@ -1,6 +1,6 @@
 <script>
-  export let title, env;
-  // export let title;
+  // export let title, env;
+  export let title;
 </script>
 
 <head>
@@ -9,7 +9,7 @@
 
   <title>{ title }</title>
 
-  <base href="{ env.local ? '/' : env.baseurl }">
+  <!-- <base href="{ env.local ? '/' : env.baseurl }"> -->
   <script type="module" src="/spa/ejected/main.js"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,8 +17,9 @@
 
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
 
-  <link rel='stylesheet' href='assets/css/normalize.css'>
-  <link rel='stylesheet' href='assets/css/skeleton.css'>
-  <link rel='stylesheet' href='assets/css/extended.css'>
+  <link rel='stylesheet' href='assets/css/normalize.css' >
+  <link rel='stylesheet' href='assets/css/skeleton.css' >
+  <link rel='stylesheet' href='assets/css/extended.css' >
+
   <link rel='stylesheet' href='spa/bundle.css'>
 </head>
