@@ -17,9 +17,9 @@
 
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
 
-  <link rel='stylesheet' href='assets/css/normalize.css' >
-  <link rel='stylesheet' href='assets/css/skeleton.css' >
-  <link rel='stylesheet' href='assets/css/extended.css' >
+  <link rel='stylesheet' href='/assets/css/normalize.css'>
+  <link rel='stylesheet' href='/assets/css/skeleton.css'>
+  <link rel='stylesheet' href='/assets/css/extended.css'>
 
   <link rel='stylesheet' href='spa/bundle.css'>
 </head>
